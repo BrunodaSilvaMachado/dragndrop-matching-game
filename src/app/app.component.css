@@ -1,0 +1,149 @@
+.example-container {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 25px 25px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.example-list {
+    border: solid 1px #ccc;
+    min-height: 60px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+}
+
+.example-box {
+    padding: 20px 10px;
+    border-bottom: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+    border: none;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+
+.drop-zone {
+    margin: 40px;
+}
+
+/* Main content area */
+   
+#content {
+    margin: 80px 70px;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background: white;
+    border-radius: 50px;
+    border: none;
+    overflow: hidden;
+    padding: 15px;
+    min-width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/**/
+#cardSlots {
+    margin: 0 auto 3em auto;
+    float: right;
+}
+
+/* The initial pile of unsorted cards */
+
+#cardPile {
+    margin: 0 auto;
+    overflow: hidden;
+    float: left;
+}
+
+#cardSlots,
+#cardPile {
+    background: linear-gradient(to left, #deb887 0%, #feb 10%, #deb887 12%,
+            #feb 24%, #deb887 26%, #feb 28%, #deb887 100%);
+    width: 40%;
+    height: 70%;
+    padding: .85em;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+
+/* Individual cards and slots */
+
+#cardSlots div,
+#cardPile div {
+    float: left;
+    /* padding: .85em; */
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px 0 0 10px;
+    background: #fff;
+}
+
+#cardSlots div.hovered {
+    background: #aaa;
+}
+
+#cardSlots div {
+    border-style: dashed;
+}
+
+#cardPile div {
+    background: #666;
+    color: #fff;
+    font-size: 1em;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+}
+
+#cardPile div.ui-draggable-dragging {
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+.pin{
+    min-width: 80px;
+    min-height: 80px;
+    position: relative;
+}
