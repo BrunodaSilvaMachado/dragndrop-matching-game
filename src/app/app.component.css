@@ -80,6 +80,7 @@
 #cardSlots {
     margin: 0 auto 3em auto;
     float: right;
+    min-width: 400px;
 }
 
 /* The initial pile of unsorted cards */
@@ -88,6 +89,8 @@
     margin: 0 auto;
     overflow: hidden;
     float: left;
+    max-height: 475px;
+    min-height: 100px;
 }
 
 #cardSlots,
@@ -147,3 +150,23 @@
     min-height: 80px;
     position: relative;
 }
+
+  /* "You did it!" message */
+  #successMessage {
+    position: absolute;
+    left: 30%;
+    top: 250px;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    background: #feb;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    padding: 20px;
+    display: table;
+  }
