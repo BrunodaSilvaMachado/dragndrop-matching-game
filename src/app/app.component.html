@@ -19,4 +19,10 @@
       [ngStyle]="{'background-image': 'url(' + ((item.match())? item.src: item.hover) + ')','background-size':'cover'}">
     </div>
   </div>
+
+  <div id="successMessage" *ngIf="todo.length < 1">
+    <h2>Congratulations!</h2>
+    <img src="../assets/parabens.png"/><br>
+    <button (click)="init()">Play Again</button>
+  </div>
 </div>
