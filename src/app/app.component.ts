@@ -1,18 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
-import { IPin, OneMatch, pins, pinshover } from './model/pin';
+import { IPin, OneMatch} from './model/pin';
+import { PinService } from './pin.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'dragndrop-matching-game';
 
-  todo: IPin[] = this.shuffleArray(pins);
+  todo: IPin[] = [];
+  done: OneMatch[] = [];
 
-  done: OneMatch[] = this.shuffleArray(pinshover);
+  constructor( private pinService: PinService ){}
+
+  ngOnInit(): void {
+    this.init();
+  }
+
+  init(){
+    this.todo = this.pinService.getPins();
+    this.done = this.shuffleArray(this.pinService.getPinsHover());
+  }
 
   drop(event: CdkDragDrop<IPin[]>) {
     if (event.previousContainer === event.container) {
