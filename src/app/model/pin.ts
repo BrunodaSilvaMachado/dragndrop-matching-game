@@ -39,13 +39,13 @@ export const pins:IPin[] = [
     {id:30, title:"Pentagono verde",src:"./assets/Botoes/Botoes_jogo_lince_30.png"},
     {id:31, title:"Caminhão",src:"./assets/Botoes/Botoes_jogo_lince_31.png"},
     {id:32, title:"Castelo",src:"./assets/Botoes/Botoes_jogo_lince_32.png"},
-    {id:33, title:"Peixinho de aquario",src:"./assets/Botoes/Botoes_jogo_lince_32.png"},
-    {id:34, title:"Carrinho abstrato",src:"./assets/Botoes/Botoes_jogo_lince_33.png"},
-    {id:35, title:"Criança sorrindo",src:"./assets/Botoes/Botoes_jogo_lince_34.png"},
-    {id:36, title:"Bola de Basquetebol",src:"./assets/Botoes/Botoes_jogo_lince_35.png"},
-    {id:37, title:"Macieira",src:"./assets/Botoes/Botoes_jogo_lince_36.png"},
-    {id:38, title:"Figura abstrata lilas",src:"./assets/Botoes/Botoes_jogo_lince_37.png"},
-    {id:39, title:"Figura abstrata azul",src:"./assets/Botoes/Botoes_jogo_lince_38.png"}
+    {id:33, title:"Peixinho de aquario",src:"./assets/Botoes/Botoes_jogo_lince_33.png"},
+    {id:34, title:"Carrinho abstrato",src:"./assets/Botoes/Botoes_jogo_lince_34.png"},
+    {id:35, title:"Criança sorrindo",src:"./assets/Botoes/Botoes_jogo_lince_35.png"},
+    {id:36, title:"Bola de Basquetebol",src:"./assets/Botoes/Botoes_jogo_lince_36.png"},
+    {id:37, title:"Macieira",src:"./assets/Botoes/Botoes_jogo_lince_37.png"},
+    {id:38, title:"Figura abstrata lilas",src:"./assets/Botoes/Botoes_jogo_lince_38.png"},
+    {id:39, title:"Figura abstrata azul",src:"./assets/Botoes/Botoes_jogo_lince_39.png"}
 ];
 
 export class OneMatch implements IPin{
